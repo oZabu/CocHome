@@ -1,0 +1,167 @@
+body {
+    background-color: #1E2832;
+    color: #B4C8D2;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+#bodybody {
+    display: flex;
+    justify-content: center;
+}
+
+#leftbody {
+    height: 300px;
+    width: 200px;
+    display: grid;
+    border-left: 1px solid #B4C8D2;
+    border-radius: 100px;
+}
+
+#centerbody {
+    height: 300px;
+    width: 305px;
+    justify-content: center;
+
+}
+
+#second {
+    margin: auto;
+    padding: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 500px;
+    text-align: center;
+    border: 1px solid #B4C8D2;
+}
+
+#time-display {
+    font-size: 65px;
+    margin: 0;
+    margin-top: 27%;
+}
+
+#day-display {
+    font-size: 20px;
+    margin: 0;
+}
+
+#rightbody {
+    height: 300px;
+    width: 200px;
+    display: grid;
+    border-right: 1px solid #B4C8D2;
+    border-radius: 100px;
+}
+
+details {
+    background-color: #0F1419;
+    border: 1px solid #0FC8FF;
+    width: 400px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+iframe {
+    border: 1px solid #0FC8FF;
+    width: 300px;
+    height: 400px;
+
+}
+
+#twitterbody {
+    margin: 30px;
+}
+
+.iframeDiv {
+    height: 600px;
+    width: 400px;
+    background-color: #0F1419;
+    border: 1px solid #0FC8FF;
+    border-radius: 5px;
+}
+
+.checkbox {
+    display: none;
+
+}
+
+.twitterbutton {
+    background-color: #0F1419;
+    border: 1px solid #0FC8FF;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#timeline {
+    display: flex;
+    justify-content: center;
+}
+
+#tabbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.appdiv {
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.appbutton {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #B4C8D2;
+    border-radius: 10px;
+}
+
+#translationbody {
+    margin: 30px;
+
+}
+
+#translationiframe {
+    height: 600px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+#weatherbody {
+    margin: 30px;
+}
+
+#weatheriframe {
+    height: 600px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+#alarmbody {
+    margin: 30px;
+}
+
+#alarmiframe {
+    height: 600px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.ciframe {
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* .iframe {
+    border: 1px solid #0FC8FF;
+    width: 300px;
+    height: 400px;
+
+} */

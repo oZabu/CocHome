@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini</title>
+    <link rel="stylesheet" href="mini2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="bodybody">
+
+        <div id="leftbody">
+            <input id="twitterapp" class="checkbox" type="radio" name="appcheckbutton" checked>
+            <div class="appdiv">
+                <label for="twitterapp">
+                    <img class="appbutton" src="twitter_icon.png" alt="twitter">
+                </label>
+            </div>
+
+            <input id="translationapp" class="checkbox" type="radio" name="appcheckbutton">
+            <div class="appdiv">
+                <label for="translationapp">
+                    <img class="appbutton" src="translation_icon.png" alt="translation">
+                </label>
+            </div>
+
+
+        </div>
+
+        <div id="centerbody">
+            <div id="second">
+                <p id="time-display">00:00</p>
+                <p id="day-display">00/00(---)</p>
+            </div>
+        </div>
+
+        <div id="rightbody">
+            <input id="weatherapp" class="checkbox" type="radio" name="appcheckbutton">
+            <div class="appdiv">
+                <label for="weatherapp">
+                    <img class="appbutton" src="weather_icon.png" alt="weather">
+                </label>
+            </div>
+
+            <input id="alarmapp" class="checkbox" type="radio" name="appcheckbutton">
+            <div class="appdiv">
+                <label for="alarmapp">
+                    <img class="appbutton" src="alarm_icon.png" alt="alarm">
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="twitterbody">
+
+        <div id="tabbutton">
+            <input id="NHKcheck" class="checkbox" type="radio" name="twittercheckbutton" checked>
+            <label for="NHKcheck">
+                <div class="twitterbutton">NHK</div>
+            </label>
+
+            <input id="NERVcheck" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="NERVcheck">
+                <div class="twitterbutton">NERV防災</div>
+            </label>
+
+            <input id="FAMITSUcheck" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="FAMITSUcheck">
+                <div class="twitterbutton">ファミ通</div>
+            </label>
+
+            <input id="GAMEwithcheck" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="GAMEwithcheck">
+                <div class="twitterbutton">GameWith</div>
+            </label>
+
+            <input id="APEXcheck" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="APEXcheck">
+                <div class="twitterbutton">APEX情報</div>
+            </label>
+
+            <input id="APEX1check" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="APEX1check">
+                <div class="twitterbutton">APEXnews</div>
+            </label>
+        </div>
+
+        <div id="timeline">
+            <div id="NHKtwitter" class="iframeDiv">
+                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                    href="https://twitter.com/nhk_news?ref_src=twsrc%5Etfw">Tweets by nhk_news</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div id="NERVtwitter" class="iframeDiv">
+                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                    href="https://twitter.com/UN_NERV?ref_src=twsrc%5Etfw">Tweets by UN_NERV</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div id="FAMITSUtwitter" class="iframeDiv">
+                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                    href="https://twitter.com/famitsu?ref_src=twsrc%5Etfw">Tweets by famitsu</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div id="GAMEwithtwitter" class="iframeDiv">
+                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                    href="https://twitter.com/gamewith_review?ref_src=twsrc%5Etfw">Tweets by gamewith_review</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div id="APEXtwitter" class="iframeDiv">
+                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                    href="https://twitter.com/ApexLegendsWiki?ref_src=twsrc%5Etfw">Tweets by ApexLegendsWiki</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div id="APEX1twitter" class="iframeDiv">
+                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                    href="https://twitter.com/ApexTimes?ref_src=twsrc%5Etfw">Tweets by ApexTimes</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="translationbody">
+        <div class="ciframe">
+            <iframe id="translationiframe" src="https://www.bing.com/translator?to=ja&setlang=ja"
+                frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div id="weatherbody">
+        <div class="ciframe">
+            <iframe id="weatheriframe" src="https://weathernews.jp/" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div id="alarmbody">
+        <div class="ciframe">
+            <iframe id="alarmiframe" src="https://ozabu.github.io/alarm/timer.html"></iframe>
+        </div>
+    </div>
+
+
+    <script src="mini2.js"></script>
+</body>
+
+</html>
