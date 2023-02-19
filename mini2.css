@@ -1,9 +1,68 @@
 body {
+    margin: 0;
     background-color: #1E2832;
     color: #B4C8D2;
     font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
+/*  */
+@keyframes my-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    animation-name: my-fade-in;
+    animation-duration: 1s;
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #B4C8D2;
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(#171f27, #1E2832);
+}
+
+#hdd {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+
+}
+
+#headleft {
+    display: flex;
+}
+
+#headright {
+    display: flex;
+}
+
+#headTime {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Hiragino Sans';
+    padding-top: 1px;
+    text-decoration: none;
+    color: #B4C8D2;
+}
+
+.appbuttonn {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 1px solid #B4C8D2;
+    border-right: 1px solid #B4C8D2;
+    border-radius: 5px;
+}
+
+/*  */
 #bodybody {
     display: flex;
     justify-content: center;
@@ -19,7 +78,7 @@ body {
 
 #centerbody {
     height: 300px;
-    width: 305px;
+    width: 300px;
     justify-content: center;
 
 }
@@ -55,15 +114,18 @@ body {
 
 details {
     background-color: #0F1419;
-    border: 1px solid #0FC8FF;
+    border: 1px solid #B4C8D2;
     width: 400px;
     padding: 10px;
     font-size: 20px;
     margin: 10px;
 }
 
+#jump {
+    height: 30px;
+}
+
 iframe {
-    border: 1px solid #0FC8FF;
     width: 300px;
     height: 400px;
 
@@ -75,9 +137,9 @@ iframe {
 
 .iframeDiv {
     height: 600px;
-    width: 400px;
+    width: 600px;
     background-color: #0F1419;
-    border: 1px solid #0FC8FF;
+    border: 1px solid #B4C8D2;
     border-radius: 5px;
 }
 
@@ -87,13 +149,15 @@ iframe {
 }
 
 .twitterbutton {
-    background-color: #0F1419;
-    border: 1px solid #0FC8FF;
-    width: 100px;
+    color: #0FC8FF;
+    background-color: #1E2832;
+    border: 1px solid #B4C8D2;
+    width: 97px;
     height: 25px;
     text-align: center;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 2px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -128,7 +192,7 @@ iframe {
 
 #translationiframe {
     height: 600px;
-    width: 400px;
+    width: 600px;
     border-radius: 5px;
 }
 
@@ -138,7 +202,7 @@ iframe {
 
 #weatheriframe {
     height: 600px;
-    width: 400px;
+    width: 600px;
     border-radius: 5px;
 }
 
@@ -148,13 +212,13 @@ iframe {
 
 #alarmiframe {
     height: 600px;
-    width: 400px;
+    width: 600px;
     border-radius: 5px;
 }
 
 .ciframe {
     height: 600px;
-    width: 400px;
+    width: 600px;
     margin: auto;
     border-radius: 5px;
 }
@@ -165,3 +229,86 @@ iframe {
     height: 400px;
 
 } */
+
+/* footer {
+    display: flex;
+    justify-content: center;
+}
+
+#food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    width: 100px;
+    border: 1px solid #B4C8D2;
+    border-radius: 50px;
+    background: #1E2832;
+}
+
+#cssboddy {
+    display: flex;
+    justify-content: center;
+}
+
+#edit__check {
+    display: flex;
+    justify-content: center;
+}
+
+#edit_icon {
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid #B4C8D2;
+    border-radius: 50px; 
+} */
+
+footer {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+}
+
+#footerbody {
+    animation-name: my-fade-in;
+    animation-duration: 1s;
+    width: 315px;
+    /* background: #0F1419; */
+    border: 1px solid#B4C8D2;
+    border-radius: 10px;
+}
+
+#edit_icon {
+    height: 50px;
+    width: 50px;
+}
+
+#_edditbutton_ {
+    display: flex;
+    justify-content: center;
+}
+
+#editbody {
+    margin: 10px;
+    height: 350px;
+    width: 320px;
+}
+
+.list {
+    display: flex;
+}
+
+#cssDoneB {
+    display: flex;
+    justify-content: center;
+}
+
+#doneButton {
+    height: 40px;
+    width: 80px;
+    background-color: #1E2832;
+    border: 1px solid #B4C8D2;
+    color: #B4C8D2;
+    border-radius: 10px;
+}
