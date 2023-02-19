@@ -5,15 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CocHome</title>
-    <link rel="stylesheet" href="mini2.css">
+    <link rel="stylesheet" href="CoCHome2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap"
         rel="stylesheet">
-        <link rel="icon" href="icon.png">
+    <link rel="icon" href="icon.png">
 </head>
+<!--  -->
+<header id="headbo">
+
+    <div id="hdd">
+
+        <div id="headleft">
+
+            <div class="appdivv">
+                <label for="twitterapp">
+                    <img class="appbuttonn" src="twitter_icon.png" alt="twitter">
+                </label>
+            </div>
+
+            <div class="appdivv">
+                <label for="translationapp">
+                    <img class="appbuttonn" src="translation_icon.png" alt="translation">
+                </label>
+            </div>
+
+        </div>
+
+        <div id="headerbody">
+            <a id="headTime" href="#jump">00:00</a>
+        </div>
+
+        <div id="headright">
+
+            <div class="appdivv">
+                <label for="weatherapp">
+                    <img class="appbuttonn" src="weather_icon.png" alt="weather">
+                </label>
+            </div>
+
+            <div class="appdivv">
+                <label for="alarmapp">
+                    <img class="appbuttonn" src="alarm_icon.png" alt="alarm">
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</header>
+<!--  -->
 
 <body>
     <div id="bodybody">
@@ -62,80 +109,87 @@
 
     </div>
 
+    <div id="jump"></div>
+    <!-- 
+    twitterrrrrrrrrrrrrrrrrrrrrrr
+ -->
     <div id="twitterbody">
 
         <div id="tabbutton">
-            <input id="NHKcheck" class="checkbox" type="radio" name="twittercheckbutton" checked>
-            <label for="NHKcheck">
-                <div class="twitterbutton">NHK</div>
+            <input id="twittercheck1" class="checkbox" type="radio" name="twittercheckbutton" checked>
+            <label for="twittercheck1">
+                <div id="buttontext1" class="twitterbutton">NHK</div>
             </label>
 
-            <input id="NERVcheck" class="checkbox" type="radio" name="twittercheckbutton">
-            <label for="NERVcheck">
-                <div class="twitterbutton">NERV防災</div>
+            <input id="twittercheck2" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="twittercheck2">
+                <div id="buttontext2" class="twitterbutton">NERV</div>
             </label>
 
-            <input id="FAMITSUcheck" class="checkbox" type="radio" name="twittercheckbutton">
-            <label for="FAMITSUcheck">
-                <div class="twitterbutton">ファミ通</div>
+            <input id="twittercheck3" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="twittercheck3">
+                <div id="buttontext3" class="twitterbutton">ファミ通</div>
             </label>
 
-            <input id="GAMEwithcheck" class="checkbox" type="radio" name="twittercheckbutton">
-            <label for="GAMEwithcheck">
-                <div class="twitterbutton">GameWith</div>
+            <input id="twittercheck4" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="twittercheck4">
+                <div id="buttontext4" class="twitterbutton">GameWith</div>
             </label>
 
-            <input id="APEXcheck" class="checkbox" type="radio" name="twittercheckbutton">
-            <label for="APEXcheck">
-                <div class="twitterbutton">APEX情報</div>
+            <input id="twittercheck5" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="twittercheck5">
+                <div id="buttontext5" class="twitterbutton">APEX情報</div>
             </label>
 
-            <input id="APEX1check" class="checkbox" type="radio" name="twittercheckbutton">
-            <label for="APEX1check">
-                <div class="twitterbutton">APEXnews</div>
+            <input id="twittercheck6" class="checkbox" type="radio" name="twittercheckbutton">
+            <label for="twittercheck6">
+                <div id="buttontext6" class="twitterbutton">APEXnews</div>
             </label>
         </div>
 
         <div id="timeline">
             <div id="NHKtwitter" class="iframeDiv">
-                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                <a id="URL1twitter" class="twitter-timeline" data-width="600" data-height="600" data-theme="dark"
                     href="https://twitter.com/nhk_news?ref_src=twsrc%5Etfw">Tweets by nhk_news</a>
+                <!-- https://twitter.com/nhk_news?ref_src=twsrc%5Etfw -->
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
             <div id="NERVtwitter" class="iframeDiv">
-                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                <a id="URL2twitter" class="twitter-timeline" data-width="600" data-height="600" data-theme="dark"
                     href="https://twitter.com/UN_NERV?ref_src=twsrc%5Etfw">Tweets by UN_NERV</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
             <div id="FAMITSUtwitter" class="iframeDiv">
-                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                <a id="URL3twitter" class="twitter-timeline" data-width="600" data-height="600" data-theme="dark"
                     href="https://twitter.com/famitsu?ref_src=twsrc%5Etfw">Tweets by famitsu</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
             <div id="GAMEwithtwitter" class="iframeDiv">
-                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                <a id="URL4twitter" class="twitter-timeline" data-width="600" data-height="600" data-theme="dark"
                     href="https://twitter.com/gamewith_review?ref_src=twsrc%5Etfw">Tweets by gamewith_review</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
             <div id="APEXtwitter" class="iframeDiv">
-                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                <a id="URL5twitter" class="twitter-timeline" data-width="600" data-height="600" data-theme="dark"
                     href="https://twitter.com/ApexLegendsWiki?ref_src=twsrc%5Etfw">Tweets by ApexLegendsWiki</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
             <div id="APEX1twitter" class="iframeDiv">
-                <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark"
+                <a id="URL6twitter" class="twitter-timeline" data-width="600" data-height="600" data-theme="dark"
                     href="https://twitter.com/ApexTimes?ref_src=twsrc%5Etfw">Tweets by ApexTimes</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
         </div>
     </div>
-
+    <!-- 
+    twitterrererererererererererererer
+ -->
     <div id="translationbody">
         <div class="ciframe">
             <iframe id="translationiframe" src="https://www.bing.com/translator?to=ja&setlang=ja"
@@ -156,7 +210,140 @@
     </div>
 
 
-    <script src="mini2.js"></script>
+    <script src="CoCHome2.js"></script>
 </body>
+
+<footer>
+
+    <div id="footerbody">
+        <div id="_edditbutton_">
+            <label for="editcheck">
+                <div id="food">
+                    <img id="edit_icon" src="edit_icon.png" alt="edit">
+                </div>
+            </label>
+
+            <input id="editcheck" class="checkbox" type="checkbox" name="editbutton">
+        </div>
+
+
+        <div id="editbody">
+            <ul style="list-style: none;">
+                <li>
+
+                    <div class="list">
+                        <div>
+                            <div>Name1</div>
+                            <input id="name1" type="text" size="12" maxlength="6" placeholder="名前1" value="NHK">
+                        </div>
+
+                        <div>
+                            <div>URL1</div>
+                            <input id="url1" type="text" placeholder="URL1"
+                                value="https://twitter.com/PUBG_JOJOOG?s=20&t=7DJ0KbBNnIGGrH3kFpQPHw">
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <div>Name2</div>
+                            <input id="name2" type="text" size="12" maxlength="6" placeholder="名前2" value="NERV">
+                        </div>
+
+                        <div>
+                            <div>URL2</div>
+                            <input id="url2" type="text" placeholder="URL2"
+                                value="https://twitter.com/UN_NERV?ref_src=twsrc%5Etfw">
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <div>Name3</div>
+                            <input id="name3" type="text" size="12" maxlength="6" placeholder="名前3" value="ファミ通">
+                        </div>
+
+                        <div>
+                            <div>URL3</div>
+                            <input id="url3" type="text" placeholder="URL3"
+                                value="https://twitter.com/famitsu?ref_src=twsrc%5Etfw">
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <div>Name4</div>
+                            <input id="name4" type="text" size="12" maxlength="6" placeholder="名前4" value="GameWith">
+                        </div>
+
+                        <div>
+                            <div>URL4</div>
+                            <input id="url4" type="text" placeholder="URL4"
+                                value="https://twitter.com/gamewith_review?ref_src=twsrc%5Etfw">
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <div>Name5</div>
+                            <input id="name5" type="text" size="12" maxlength="6" placeholder="名前5" value="APEX情報">
+                        </div>
+
+                        <div>
+                            <div>URL5</div>
+                            <input id="url5" type="text" placeholder="URL5"
+                                value="https://twitter.com/ApexLegendsWiki?ref_src=twsrc%5Etfw">
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <div>Name6</div>
+                            <input id="name6" type="text" size="12" maxlength="6" placeholder="名前6" value="APEXnews">
+                        </div>
+
+                        <div>
+                            <div>URL6</div>
+                            <input id="url6" type="text" placeholder="URL6"
+                                value="https://twitter.com/ApexTimes?ref_src=twsrc%5Etfw">
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+            <div id="cssDoneB">
+                <input id="doneButton" type="button" onclick="doneButtonClick1()" value="done"></input>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- <div id="cssbutton">
+
+        <label for="editcheck">
+            <div id="food">
+                <img id="edit_icon" src="edit_icon.png" alt="edit">
+            </div>
+        </label>
+
+        <input id="editcheck" class="checkbox" type="checkbox" name="editbutton">
+    </div>
+
+    <div id="editBody">
+
+        <ul>
+            <li>
+                <input id="name1" type="text" size="25" maxlength="6" placeholder="名前">
+                <input id="url1" type="text" placeholder="URL">
+            </li>
+        </ul>
+
+    </div> -->
+
+</footer>
 
 </html>
