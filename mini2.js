@@ -11,16 +11,19 @@ function timer() {
     var msg = nowHour + ":" + nowMin;　//表示する時間(時間+分)
     document.getElementById("time-display").innerHTML = msg; //時間を表示させる
 
-    var nowMo = "00" + nowTime.getMonth();
-    var nowD = "00" + nowTime.getDate();
-    var nowW = nowTime.getDay();
 
-    var nowMon = nowMo.slice(-2);
-    var nowDay = nowD.slice(-2);
+    var days = new Date();
+    //月
+    var nowMon = ("0" + (days.getMonth() + 1)).slice(-2);
+    //日
+    var nowDay = ("0" + days.getDate()).slice(-2);
+    //曜
+    var nowW = days.getDay();
     var dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][nowW];
 
     var msgd = nowMon + "/" + nowDay + "(" + dayOfWeek + ")";
-    document.getElementById("day-display").innerHTML = msgd; //時間を表示させる
+    document.getElementById("day-display").innerHTML = msgd;
+    document.getElementById("headTime").innerHTML = msg; //時間を表示させる
 };
 
 function appcheck() {
@@ -63,7 +66,7 @@ function appcheck() {
 
 function twittercheck() {
     //NHK
-    const NHKcheck = document.getElementById('NHKcheck');
+    const NHKcheck = document.getElementById('twittercheck1');
     if (NHKcheck.checked) {
         var off = document.getElementById('NHKtwitter');
         off.style.display = 'inline';
@@ -73,7 +76,7 @@ function twittercheck() {
     };
 
     //NERV
-    const NERVcheck = document.getElementById('NERVcheck');
+    const NERVcheck = document.getElementById('twittercheck2');
     if (NERVcheck.checked) {
         var off = document.getElementById('NERVtwitter');
         off.style.display = 'inline';
@@ -83,7 +86,7 @@ function twittercheck() {
     };
 
     //FAMITSU
-    const FAMITSUcheck = document.getElementById('FAMITSUcheck');
+    const FAMITSUcheck = document.getElementById('twittercheck3');
     if (FAMITSUcheck.checked) {
         var off = document.getElementById('FAMITSUtwitter');
         off.style.display = 'inline';
@@ -93,7 +96,7 @@ function twittercheck() {
     };
 
     //GAMEwith
-    const GAMEwithcheck = document.getElementById('GAMEwithcheck');
+    const GAMEwithcheck = document.getElementById('twittercheck4');
     if (GAMEwithcheck.checked) {
         var off = document.getElementById('GAMEwithtwitter');
         off.style.display = 'inline';
@@ -103,7 +106,7 @@ function twittercheck() {
     };
 
     //APEX
-    const APEXcheck = document.getElementById('APEXcheck');
+    const APEXcheck = document.getElementById('twittercheck5');
     if (APEXcheck.checked) {
         var off = document.getElementById('APEXtwitter');
         off.style.display = 'inline';
@@ -113,7 +116,7 @@ function twittercheck() {
     };
 
     //APEX1
-    const APEX1check = document.getElementById('APEX1check');
+    const APEX1check = document.getElementById('twittercheck6');
     if (APEX1check.checked) {
         var off = document.getElementById('APEX1twitter');
         off.style.display = 'inline';
@@ -121,7 +124,53 @@ function twittercheck() {
         var on = document.getElementById('APEX1twitter');
         on.style.display = 'none';
     };
+
+    //editbutton めんどかったからここに書く
+    const editb = document.getElementById('editcheck');
+    if (editb.checked) {
+        var editboff = document.getElementById('editbody');
+        editboff.style.display = 'inline';
+    } else {
+        var editbon = document.getElementById('editbody');
+        editbon.style.display = 'none';
+    };
 };
+const headbo = document.getElementById('headbo');
+window.addEventListener('DOMContentLoaded', function () {
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY < 250) {
+            headbo.style.display = 'none';
+        } else {
+            headbo.style.display = 'inline';
+        };
+    });
+
+});
+
+//URL変更計画
+const buttontext1 = document.getElementById("buttontext1");
+const URL1t = document.getElementById("URL1twitter");
+const iframe_ = document.getElementById("timeline");
+console.log(URL1t);
+function doneButtonClick1() {
+
+
+
+    const Name1 = document.getElementById("name1").value;
+    buttontext1.innerHTML = Name1;
+
+    const URL1 = document.getElementById("url1").value;
+
+    URL1t.setAttribute('href', URL1);
+
+    // URL1t.setAttribute('href', URL1);//urlを置き換えるやつ
+    console.log(URL1);
+    console.log(URL1t);
+
+};
+
+// const setIntervalyouTwitterTimeline = document.getElementById('timeline');
 
 setInterval(appcheck, 100);
 setInterval(twittercheck, 100);
